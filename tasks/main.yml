@@ -1,0 +1,24 @@
+# tasks file for vagrant
+---
+- name: create (download) directory
+  file:
+    path: "{{ vagrant_downloads_path }}"
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+  tags: [configuration, vagrant, vagrant-download]
+
+- name: download
+  get_url:
+    url: "https://dl.bintray.com/mitchellh/vagrant/vagrant_{{ vagrant_version }}_{{ ansible_machine }}.deb"
+    dest: "{{ vagrant_downloads_path }}/vagrant_{{ vagrant_version }}_{{ ansible_machine }}.deb"
+    owner: root
+    group: root
+    mode: 0644
+  tags: [configuration, vagrant, vagrant-download]
+
+- name: install deb file
+  apt:
+    deb: "{{ vagrant_downloads_path }}/vagrant_{{ vagrant_version }}_{{ ansible_machine }}.deb"
+  tags: [configuration, vagrant, vagrant-install-deb]

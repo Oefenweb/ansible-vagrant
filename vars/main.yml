@@ -1,0 +1,3 @@
+# vars file for vagrant
+---
+vagrant_downloads_path: /var/lib/ansible/vagrant/downloads
