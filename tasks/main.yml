@@ -11,7 +11,7 @@
 
 - name: download
   get_url:
-    url: "https://dl.bintray.com/mitchellh/vagrant/vagrant_{{ vagrant_version }}_{{ ansible_machine }}.deb"
+    url: "https://releases.hashicorp.com/vagrant/{{ vagrant_version }}/vagrant_{{ vagrant_version }}_{{ ansible_machine }}.deb"
     dest: "{{ vagrant_downloads_path }}/vagrant_{{ vagrant_version }}_{{ ansible_machine }}.deb"
     owner: root
     group: root
