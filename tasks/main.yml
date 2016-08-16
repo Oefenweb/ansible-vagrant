@@ -7,7 +7,10 @@
     owner: root
     group: root
     mode: 0755
-  tags: [configuration, vagrant, vagrant-download]
+  tags:
+    - configuration
+    - vagrant
+    - vagrant-download
 
 - name: download
   get_url:
@@ -16,9 +19,15 @@
     owner: root
     group: root
     mode: 0644
-  tags: [configuration, vagrant, vagrant-download]
+  tags:
+    - configuration
+    - vagrant
+    - vagrant-download
 
 - name: install deb file
   apt:
     deb: "{{ vagrant_downloads_path }}/vagrant_{{ vagrant_version }}_{{ ansible_machine }}.deb"
-  tags: [configuration, vagrant, vagrant-install-deb]
+  tags:
+    - configuration
+    - vagrant
+    - vagrant-install-deb
