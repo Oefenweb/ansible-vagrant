@@ -10,7 +10,7 @@ None
 
 #### Variables
 
-* `vagrant_version` [default: `1.8.5`]: Version to install
+* `vagrant_version` [default: `1.8.6`]: Version to install
 
 ## Dependencies
 
