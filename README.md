@@ -16,13 +16,17 @@ None
 
 None
 
-#### Example
+#### Installation
+
+```ansible-galaxy install termitten.vagrant```
+
+#### Example playbook
 
 ```yaml
 ---
 - hosts: all
   roles:
-    - vagrant
+    - termitten.vagrant
 ```
 
 #### License
