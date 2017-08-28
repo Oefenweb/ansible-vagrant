@@ -26,22 +26,22 @@ boxes = [
     :ram => "256"
   },
   {
-    :name => "debian-711",
-    :box => "bento/debian-7.11",
+    :name => "debian-7",
+    :box => "bento/debian-7",
     :ip => '10.0.0.14',
     :cpu => "50",
     :ram => "256"
   },
   {
-    :name => "debian-88",
-    :box => "bento/debian-8.8",
+    :name => "debian-8",
+    :box => "bento/debian-8",
     :ip => '10.0.0.15',
     :cpu => "50",
     :ram => "256"
   },
   {
-    :name => "debian-90",
-    :box => "bento/debian-9.0",
+    :name => "debian-9",
+    :box => "bento/debian-9",
     :ip => '10.0.0.16',
     :cpu => "50",
     :ram => "256"
