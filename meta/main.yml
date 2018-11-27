@@ -1,6 +1,7 @@
 # meta file for vagrant
 ---
 galaxy_info:
+  role_name: vagrant
   author: Mischa ter Smitten
   company: Oefenweb.nl B.V.
   description: Set up Vagrant in Debian-like systems
