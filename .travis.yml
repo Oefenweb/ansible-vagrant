@@ -76,9 +76,6 @@ script:
 
 notifications:
   email: false
-  hipchat:
-    rooms:
-      secure: 2LDpOiNwg1L+8skZPk7CVTL7MQPyp2cXAoM0MWBISERXJcFDgX5xOK3jIv+rqbuiPkhSX1QsuRCumAu3E8pqnAn3Hc6ekiBp6VymprwLW/J060Q3c4UsTg3EyKN09m7/bLaS/vQHhmghUdbKkRUHSwZ0E7HiHvVcAMcK/1A6i/PKKSiEkqk2m7a/syIbwXX8V+asUiCKpfG7/X6ujTcgb/LanXcORWhkm2egwhdzLRXYc+ZqXgjVcdK2cnR1bkqLbEUHvehOgF5zzgot53jH2GBWfVcE1dntcEuOh+0A3PbgWtfdTFJg15Ru0z/Q2e2WQ/e2I6aegsgCW5OIFI9ksYAa59Ys9RgB/+DNM8mIb6tKO44DNQ/panxY8A2r2Q0+9VzK4sM/yrUu/kNnU7l0c0vNZcNEEWivxteMJ31nnvZ2rFdMnX60UEc8h6yMkzBTjEdbSPfu2Vy/UH1p1z03gCI3ro2dL7mSegVZGzgkIYcYEMEBuDw2c/facyoPNOZIzTxpbrkEQ96OexavvotoTxKAoGZx3Lr7saIc1s9hIiwfx99zX/0yb66CcM57z4xVRvorf1lAmeMz+SSkmAdTaa9Y9IDhGlCWpyenkXOeiuu+0JyiLm4HTozGD8MI/OqNlu74b1dTwRQP4e7I7qMJA2A89UESZAnDhX1H4rGb9nA=
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
   slack:
     rooms:
