@@ -1,6 +1,7 @@
 ## vagrant
 
-[![Build Status](https://travis-ci.org/Oefenweb/ansible-vagrant.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-vagrant) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-vagrant-blue.svg)](https://galaxy.ansible.com/Oefenweb/vagrant)
+[![Build Status](https://travis-ci.org/Oefenweb/ansible-vagrant.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-vagrant)
+[![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-vagrant-blue.svg)](https://galaxy.ansible.com/Oefenweb/vagrant)
 
 Set up [vagrant](https://www.vagrantup.com/) in Debian-like systems.
 
@@ -10,7 +11,7 @@ None
 
 #### Variables
 
-* `vagrant_version` [default: `2.2.6`]: Version to install
+* `vagrant_version` [default: `2.2.7`]: Version to install
 
 ## Dependencies
 
