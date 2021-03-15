@@ -1,4 +1,4 @@
-# tasks file for vagrant
+# tasks file
 ---
 - name: create (download) directory
   file:
