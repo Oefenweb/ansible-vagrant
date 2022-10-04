@@ -1,7 +1,7 @@
 # tasks file
 ---
 - name: create (download) directory
-  file:
+  ansible.builtin.file:
     path: "{{ vagrant_downloads_path }}"
     state: directory
     owner: root
@@ -13,7 +13,7 @@
     - vagrant-download
 
 - name: download
-  get_url:
+  ansible.builtin.get_url:
     url: "https://releases.hashicorp.com/vagrant/{{ vagrant_version }}/vagrant_{{ vagrant_version }}_{{ ansible_machine }}.deb"
     dest: "{{ vagrant_downloads_path }}/vagrant_{{ vagrant_version }}_{{ ansible_machine }}.deb"
     owner: root
@@ -25,7 +25,7 @@
     - vagrant-download
 
 - name: install deb file
-  apt:
+  ansible.builtin.apt:
     deb: "{{ vagrant_downloads_path }}/vagrant_{{ vagrant_version }}_{{ ansible_machine }}.deb"
   tags:
     - configuration
