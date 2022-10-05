@@ -1,3 +1,14 @@
 # vars file
 ---
-vagrant_downloads_path: /var/lib/ansible/vagrant/downloads
+vagrant_repositories:
+  - type: deb
+    url: "https://apt.releases.hashicorp.com {{ ansible_distribution_release }}"
+    component: main
+
+vagrant_dependencies_pre:
+  - software-properties-common
+  - dirmngr
+  - apt-transport-https
+
+vagrant_dependencies:
+  - vagrant
