@@ -1,0 +1,8 @@
+# tasks file
+---
+- name: install | dependencies
+  ansible.builtin.apt:
+    name: "{{ vagrant_dependencies }}"
+    state: "{{ apt_install_state | default('latest') }}"
+  tags:
+    - vagrant-install-dependencies

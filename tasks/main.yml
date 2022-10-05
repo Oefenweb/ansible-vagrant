@@ -1,33 +1,13 @@
 # tasks file
 ---
-- name: create (download) directory
-  file:
-    path: "{{ vagrant_downloads_path }}"
-    state: directory
-    owner: root
-    group: root
-    mode: 0755
+- ansible.builtin.import_tasks: repository.yml
   tags:
     - configuration
     - vagrant
-    - vagrant-download
+    - vagrant-repository
 
-- name: download
-  get_url:
-    url: "https://releases.hashicorp.com/vagrant/{{ vagrant_version }}/vagrant_{{ vagrant_version }}_{{ ansible_machine }}.deb"
-    dest: "{{ vagrant_downloads_path }}/vagrant_{{ vagrant_version }}_{{ ansible_machine }}.deb"
-    owner: root
-    group: root
-    mode: 0644
+- ansible.builtin.import_tasks: install.yml
   tags:
     - configuration
     - vagrant
-    - vagrant-download
-
-- name: install deb file
-  apt:
-    deb: "{{ vagrant_downloads_path }}/vagrant_{{ vagrant_version }}_{{ ansible_machine }}.deb"
-  tags:
-    - configuration
-    - vagrant
-    - vagrant-install-deb
+    - vagrant-install
