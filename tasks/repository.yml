@@ -19,7 +19,7 @@
   tags:
     - vagrant-repository-keyrings-directory-create
 
-- name: download (keyring) file
+- name: download (keyring) file  # noqa command-instead-of-module risky-shell-pipe
   ansible.builtin.shell: >
     wget -O- {{ vagrant_keyring_src }} | gpg --dearmor | tee {{ vagrant_keyring_dst }}
   args:
