@@ -1,7 +1,9 @@
 # vars file
 ---
+vagrant_keyring_src: https://apt.releases.hashicorp.com/gpg
+vagrant_keyring_dst: /usr/share/keyrings/hashicorp-archive-keyring.gpg
 vagrant_repositories:
-  - type: deb
+  - type: "deb [signed-by={{ vagrant_keyring_dst }}]"
     url: "https://apt.releases.hashicorp.com {{ ansible_distribution_release }}"
     component: main
 
@@ -9,6 +11,9 @@ vagrant_dependencies_pre:
   - software-properties-common
   - dirmngr
   - apt-transport-https
+  - wget
+  - gpg
+  - coreutils
 
 vagrant_dependencies:
   - vagrant
