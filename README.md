@@ -23,7 +23,7 @@ None
 ---
 - hosts: all
   roles:
-    - vagrant
+    - oefenweb.vagrant
 ```
 
 #### License
