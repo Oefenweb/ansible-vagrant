@@ -21,7 +21,7 @@
 
 - name: repository | (keyring) file | download  # noqa command-instead-of-module risky-shell-pipe
   ansible.builtin.shell: >
-    wget -O- {{ vagrant_keyring_src }} | gpg --dearmor | tee {{ vagrant_keyring_dst }}
+    wget -O- {{ vagrant_keyring_src }} | gpg --dearmor | tee {{ vagrant_keyring_dst }} > /dev/null
   args:
     creates: "{{ vagrant_keyring_dst }}"
   tags:
