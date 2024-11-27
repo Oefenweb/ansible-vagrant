@@ -7,7 +7,10 @@ Set up [vagrant](https://www.vagrantup.com/) in Debian-like systems.
 
 #### Requirements
 
-None
+* `software-properties-common` (will be installed)
+* `dirmngr` (will be installed)
+* `apt-transport-https` (will be installed)
+* `wget` (will be installed)
 
 #### Variables
 
